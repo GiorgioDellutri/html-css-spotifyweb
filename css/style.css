@@ -1,3 +1,12 @@
+:root{
+    --black-color: #000000;
+    --light-black-color: #0D0F14;
+    --light-blue-color: #161A20;
+    --grey-color: #252525;
+    --lime-color: #BCFE4C;
+    --text-grey-color: #7A7C80;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -12,6 +21,23 @@
     flex-wrap: wrap;
 }
 
+.row{
+    flex-direction: row;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+
 
 header{
     width: 200px;
@@ -22,27 +48,45 @@ header{
 main{
     width: calc(100% - 200px);
     height: calc(100vh - 100px);
-    background-color: grey;
+    background-color: var(--light-blue-color);
     overflow-y: scroll;
 }
+main section.upgrade{
+    height: 90px;
+    width: 100%;
+    background-color: var(--light-black-color);
+}
 
-main div{
-    width: 50px;
-    height: 50px;
-    background-color: red;
+nav ul>li{
+    padding: .5rem;
+    font-size: 1rem;
+    list-style-type: none;
+    font-style: ;
+    color: var(--text-grey-color);
+}
+
+section.played{
+    margin-top: 4rem;
+}
+
+section.played div.album{
+    width: calc(100% / 6 );
+    height: 250px;
+    margin: 20px;
+    background-color: blueviolet;
 }
 
 footer{
     width: 100%;
     height: 100px;
-    background-color: blanchedalmond;
+    background-color: var(--grey-color);
 }
 
 /** REXPONSIVE */
 
 /*? MEDIUM */
 @media screen and (max-width:768px) {
-
+    
 
 }
 

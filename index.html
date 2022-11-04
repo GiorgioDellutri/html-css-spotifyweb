@@ -17,15 +17,19 @@
         </header>
     
         <main>
-            <section class="upgrade"></section>
+            <section class="upgrade flex flex-end align-center ">
+                <div>
+                    <input id="upgrade-button" type="button" value="Effettua L'upgrade"> 
+                </div>
+            </section>
             <nav class="nav-bar">
-                <ul class="nav-content flex row center">
-                    <li>Testo</li>
-                    <li>Testo</li>
-                    <li>Testo</li>
-                    <li>Testo</li>
-                    <li>Testo</li>
-                    <li>Testo</li>
+                <ul class="nav-content flex justify-center wrap">
+                    <li><a href="#">in evidenza</a></li>
+                    <li><a href="#">podcast</a></li>
+                    <li><a href="#">classifiche</a></li>
+                    <li><a href="#">generi e mood</a></li>
+                    <li><a href="#">nuove uscite</a></li>
+                    <li><a href="#">scopri</a></li>
                 </ul>
             </nav>
             <div class="main-container">
@@ -34,23 +38,69 @@
                         <h1>Recently played</h1>
                     </div>
                     <div class="albums flex wrap">
-                        <div class="album"><img src="./img/cure.jpeg" alt=""></div>
-                        <div class="album"></div>
-                        <div class="album"></div>
-                        <div class="album"></div>
-                        <div class="album"></div>
-                        <div class="album"></div>
+                        <figure class="album">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <figcaption>
+                                <p>Heavy Metal</p>
+                                <p>Subtitle</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="album">
+                            <img src="./img/stranger.jpeg" alt="">
+                            <figcaption>
+                                <p>Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</p>
+                                <p>Kyle Dixon & Michael Stein</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="album">
+                            <img src="./img/aquietplace.jpeg" alt="">
+                            <figcaption>
+                                <p>A quiet palce</p>
+                                <p>Subtitle</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="album">
+                            <img src="./img/split.jpeg" alt="">
+                            <figcaption>
+                                <p>Split</p>
+                                <p>Subtitle</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="album">
+                            <img src="./img/cure.jpeg" alt="">
+                            <figcaption>
+                                <p>A cure for wellness</p>
+                                <p>Subtitle</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="album">
+                            <img src="./img/sinister.jpeg" alt="">
+                            <figcaption>
+                                <p>Sinister</p>
+                                <p>Subtitle</p>
+                            </figcaption>
+                        </figure>
                     </div>
                 </section>
 
                 <section class="suggested">
-                    <div class="title title-seggested">
-                        <h1>Creato per Jhon Doe</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <div class="title title-suggested">
+                        <h1>Creato per Giorgio</h1>
+                        <span>Più ascolti, più accurati saranno i suggerimenti</span>
                     </div>
-                    <div class="albums flex">
-                        <div class="album-sugg"><img src="./img/cure.jpeg" alt=""></div>
-                        <div class="album-sugg"></div>
+                        <div class="albums flex wrap">
+                            <figure class="album-sugg">
+                                <img src="./img/radar.jpeg" alt="">
+                                <figcaption>
+                                    <span>Relese Radar</span>
+                                </figcaption>
+                            </figure>
+                            <figure class="album-sugg">
+                                <img src="./img/mixdaily.jpeg" alt="">
+                                <figcaption>
+                                    <span>Daily Mix 1</span>
+                                </figcaption>
+                            </figure>
                     </div>
                 </section>
             </div>

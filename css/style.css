@@ -37,7 +37,10 @@
     justify-content: space-between;
 }
 
-
+body{
+    font-family: 'Sawarabi Gothic', sans-serif;
+    color: white;
+}
 
 header{
     width: 200px;
@@ -58,7 +61,6 @@ main section.upgrade{
     background-color: var(--light-black-color);
 }
 
-
 nav ul>li{
     padding: .5rem;
     font-size: 1rem;
@@ -68,20 +70,43 @@ nav ul>li{
 
 div.main-container{
     width: 100%;
-    padding: 1rem;
-    background-color: rgba(255, 0, 0, 0.103);
+    padding: 10px;
 }
 
-div.title-played{
-    margin: 15px;
-}
-
-section.played div.album{
-    width: calc(100% / 6 - 30px);
+div.album{
+    width: calc(100% / 6 - 20px);
     height: 250px;
     margin: 10px;
     background-color: blueviolet;
+    text-align: center;
 }
+
+div.title{
+    padding: 30px 10px;
+}
+
+div.title-played h1{
+    font-size: 1.8rem;
+}
+
+img{
+    width: 100%;
+}
+
+section.suggested{
+    margin-top: 60px;
+}
+
+div.album-sugg{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+div.album-sugg img
+
 
 
 
@@ -94,10 +119,10 @@ footer{
 /** REXPONSIVE */
 
 /*? MEDIUM */
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1250px) {
 
     section.played div.album{
-        width: calc(100% / 4 - 30px);
+        width: calc(100% / 4 - 20px);
     }    
 }
 
@@ -107,9 +132,9 @@ footer{
 @media screen and (max-width:700px){
 
     section.played div.album{
-        width: calc(100% / 2 - 30px);
+        width: calc(100% / 2 - 20px);
         height: 150px;
-    }    
+        }    
 }
 
 
@@ -127,6 +152,14 @@ footer{
 
     section.played{
         flex-wrap: wrap;
+    }
+
+    div.album-sugg{
+        width: calc(100% / 2 - 20px);
+        height: 250px;
+        margin: 10px;
+        background-color: blueviolet;
+        text-align: center;
     }
 
 

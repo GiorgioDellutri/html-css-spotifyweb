@@ -129,9 +129,5 @@ footer{
         flex-wrap: wrap;
     }
 
-    section.played div.album{
-        width: 250px;
-        height: 250px;
-    }    
 
 }

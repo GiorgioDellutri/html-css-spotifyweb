@@ -39,20 +39,22 @@
 body{
     font-family: 'Sawarabi Gothic', sans-serif;
     color: white;
+    min-width: 370px;
 }
 
 header{
-    width: 250px;
+    width: 225px;
     height: calc(100vh - 80px);
     background-color: black;
-    color:var(--text-grey-color)
+    color:var(--text-grey-color);
+    overflow-y: auto;
 }
 
 main{
-    width: calc(100% - 250px);
+    width: calc(100% - 225px);
     height: calc(100vh - 80px);
     background-color: var(--light-blue-color);
-    overflow-y: scroll;
+    overflow-y: auto;
     scroll-behavior: smooth;
 }
 

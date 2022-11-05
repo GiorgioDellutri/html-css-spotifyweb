@@ -39,21 +39,22 @@ body{
 }
 
 header{
-    width: 200px;
-    height: calc(100vh - 90px);
+    width: 250px;
+    height: calc(100vh - 80px);
     background-color: black;
+    color:var(--text-grey-color)
 }
 
 main{
-    width: calc(100% - 200px);
-    height: calc(100vh - 90px);
+    width: calc(100% - 250px);
+    height: calc(100vh - 80px);
     background-color: var(--light-blue-color);
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
 /*? Section Upgrade -----------------------------------*/
-main section.upgrade{
+section.upgrade{
     height: 100px;
     width: 100%;
     background-color: var(--light-black-color);
@@ -72,6 +73,54 @@ section.upgrade #upgrade-button{
     color: white;
 }
 
+/*? Header content ----------------------------------*/
+
+div.header-container img.logo{
+    width: 80%;
+}
+
+section.home{
+    margin-top: 30px;
+}
+
+section.home ul>li,
+section.playlist ul>li{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+div.header-container li{
+    margin-top: .7rem;
+}
+
+div.header-container img.icon{
+    width: 25px;
+    vertical-align: text-bottom;
+}
+
+section.playlist{
+    margin-top: 30px;
+}
+
+section.playlist p:first-child{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 1rem 0;
+}
+
+section.playlist i{
+    font-size: 3rem;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+section.playlist span{
+    font-size: 1.2rem;
+}
+
+
 /*? Navigational bar ----------------------------------*/
 nav ul a{
     text-decoration: none;
@@ -89,6 +138,11 @@ nav ul>li{
 div.main-container{
     width: 100%;
     padding: 15px;
+}
+
+div.header-container{
+    height: calc(100vh - 90px);
+    padding: 2rem 2.5rem 2.5rem 1.5rem;
 }
 
 /*? Section Played ------------------------------------*/
@@ -152,7 +206,7 @@ figure.album-popular img{
 /*? Footer --------------------------------------------*/
 footer{
     width: 100%;
-    height: 90px;
+    height: 80px;
     background-color: var(--grey-color);
 }
 

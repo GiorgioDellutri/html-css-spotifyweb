@@ -40,13 +40,13 @@ body{
 
 header{
     width: 200px;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 80px);
     background-color: black;
 }
 
 main{
     width: calc(100% - 200px);
-    height: calc(100vh - 70px);
+    height: calc(100vh - 80px);
     background-color: var(--light-blue-color);
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -93,7 +93,6 @@ div.main-container{
 
 div.small-container{
     width: 430px;
-    background-color: rgba(255, 0, 0, 0.171);
 }
 /*? Section Played ------------------------------------*/
 
@@ -103,7 +102,7 @@ figure.album{
     text-align: center;
 }
 
-/*? Figcaption settings -------------------------------*/
+/*? Title settings ------------------------------------*/
 
 div.title{
     padding: 30px 10px;
@@ -113,27 +112,32 @@ h1{
     font-size: 1.8rem;
 }
 
+h4{
+    color: var(--text-grey-color);
+}
+
+/*? Figure / Figcaption settings ----------------------*/
+
 figure img{
     width: 90%;
 }
 
-
-figure p,
-figcaption span{
-    font-weight: 900;
+figcaption p,
+span{
+    font-weight: bold;
 }
 
-div.title-suggested span
-,figcaption p:last-child{
-    font-weight: 900;
+figcaption span{
+    font-size: .9rem;
     color: var(--text-grey-color);
+}
+
+section.suggested{
+    margin-top: 50px;
 }
 
 
 /*? Section popular -----------------------------------*/
-section.suggested{
-    margin-top: 50px;
-}
 
 figure.album-sugg,
 .album-popular{

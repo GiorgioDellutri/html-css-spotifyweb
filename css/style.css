@@ -28,6 +28,9 @@
 .align-center{
     align-items: center;
 }
+.align-end{
+    align-items: flex-end;
+}
 
 .flex-end{
     justify-content: flex-end;
@@ -75,8 +78,12 @@ section.upgrade #upgrade-button{
 
 /*? Header content ----------------------------------*/
 
-div.header-container img.logo{
+img.logo-big{
     width: 80%;
+}
+
+img.logo-small{
+    width: 100%;
 }
 
 section.home{
@@ -95,7 +102,7 @@ div.header-container li{
 }
 
 div.header-container img.icon{
-    width: 25px;
+    width: 20px;
     vertical-align: text-bottom;
 }
 
@@ -117,6 +124,27 @@ section.playlist i{
     margin-right: 10px;
 }
 
+ul.small-view,
+.logo-small{
+    display: none;
+}
+
+section.download-profile{
+    margin-top:180px ;
+}
+
+section.download-profile hr{
+    margin: 5px 0;
+}
+
+section.download-profile hr + p{
+    color: white;
+    font-weight: bolder;
+}
+
+section.download-profile img.small{
+    display: none;
+}
 
 
 /*? Navigational bar ----------------------------------*/
@@ -127,7 +155,6 @@ nav ul a{
 
 nav ul>li{
     padding: .8rem;
-    font-size: .9rem;
     list-style-type: none;
     text-transform: uppercase;
 }
@@ -231,10 +258,7 @@ footer{
         text-align: center;
     }
 
-    figcaption p,
-    span{
-        font-size: .9rem;
-    }
+   
 }
 
 /*? SMALL */
@@ -256,10 +280,6 @@ footer{
         width: calc(100% / 2 );
     }
 
-    figcaption p,
-    span{
-        font-size: 1rem;
-    }
 }
 
 /*? EXTRA-SMALL */
@@ -278,4 +298,32 @@ footer{
         flex-wrap: wrap;
     }
 
+    div.header-container {
+        padding: 12px;
+    }
+
+    div.header-container img.icon {
+        width: 25px;
+    }
+
+    ul.small-view,
+    .logo-small,
+    section.download-profile img.small{
+    display: block;
+    }
+
+    ul.standard-view,
+    .logo-big,
+    section.playlist,
+    section.download-profile p{
+        display: none;
+    }
+
+    section.home {
+        margin-top: 15px;
+    }
+
+    section.download-profile {
+        margin-top: 615px;
+    }
 }

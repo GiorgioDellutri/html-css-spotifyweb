@@ -17,17 +17,18 @@
     <div class="wrapper flex wrap">
         <header>
             <div class="header-container">
-                <img class="logo" src="./img/logo.svg" alt="spotify logo">
+                <img class="logo-big" src="./img/logo.svg" alt="spotify logo">
+                <img class="logo-small" src="./img/logo-small.svg" alt="spotify logo">
                 <section class="home">
-                    <ul>
-                        <li>
-                            <p><img class="icon" src="./img/home.svg" alt="home icon"> Home</p>
-                        </li>
-                        <li>
-                            <p><img class="icon" src="./img/search.svg" alt="home icon"> Cerca</p>
-                        </li>
-                        <li>
-                            <p><img class="icon" src="./img/libreria.svg" alt="home icon"> La tua libreria</p>
+                    <ul class="small-view">
+                        <li><img class="icon small" src="./img/home.svg" alt="home icon small"></li>
+                        <li><img class="icon small" src="./img/search.svg" alt="home icon small"></li>
+                        <li><img class="icon small" src="./img/libreria.svg" alt="home icon"></li>
+                    </ul>
+                    <ul class="standard-view">
+                        <li><p><img class="icon big" src="./img/home.svg" alt="home icon"> Home</p></li>
+                        <li><p><img class="icon big" src="./img/search.svg" alt="home icon"> Cerca</p></li>
+                        <li><p><img class="icon big" src="./img/libreria.svg" alt="home icon"> La tua libreria</p>
                         </li>
                     </ul>
                 </section>
@@ -44,6 +45,13 @@
                         <li>Nome Playlist</li>
                         <li>Nome Playlist</li>
                     </ul>
+                </section>
+                <section class="download-profile ">
+                    <p><img class="icon big" src="./img/download.svg" alt="home icon"> Installa app</p>
+                    <img class="icon small" src="./img/download.svg" alt="home icon small">
+                    <hr>
+                    <p><img class="icon profile" src="./img/profile.svg" alt="home icon"> Giorgio</p>
+                    <img class="icon small" src="./img/profile.svg" alt="home icon small">
                 </section>
             </div>
         </header>

@@ -40,13 +40,13 @@ body{
 
 header{
     width: 200px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     background-color: black;
 }
 
 main{
     width: calc(100% - 200px);
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     background-color: var(--light-blue-color);
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -91,9 +91,6 @@ div.main-container{
     padding: 15px;
 }
 
-div.small-container{
-    width: 430px;
-}
 /*? Section Played ------------------------------------*/
 
 figure.album{
@@ -136,7 +133,6 @@ section.suggested{
     margin-top: 50px;
 }
 
-
 /*? Section popular -----------------------------------*/
 
 figure.album-sugg,
@@ -153,11 +149,10 @@ figure.album-popular img{
     border-radius: 50%;
 }
 
-
 /*? Footer --------------------------------------------*/
 footer{
     width: 100%;
-    height: 70px;
+    height: 90px;
     background-color: var(--grey-color);
 }
 
@@ -179,6 +174,11 @@ footer{
         width: calc(100% / 4 );
         text-align: center;
     }
+
+    figcaption p,
+    span{
+        font-size: .9rem;
+    }
 }
 
 /*? SMALL */
@@ -196,6 +196,10 @@ footer{
         width: calc(100% / 2 );
     }
 
+    figcaption p,
+    span{
+        font-size: 1rem;
+    }
 }
 
 /*? EXTRA-SMALL */

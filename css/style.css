@@ -52,6 +52,7 @@ main{
     scroll-behavior: smooth;
 }
 
+/*? Section Upgrade -----------------------------------*/
 main section.upgrade{
     height: 100px;
     width: 100%;
@@ -71,6 +72,7 @@ section.upgrade #upgrade-button{
     color: white;
 }
 
+/*? Navigational bar ----------------------------------*/
 nav ul a{
     text-decoration: none;
     color: var(--text-grey-color);
@@ -82,6 +84,7 @@ nav ul>li{
     list-style-type: none;
     text-transform: uppercase;
 }
+/*? Container settings --------------------------------*/
 
 div.main-container{
     width: 100%;
@@ -92,13 +95,15 @@ div.small-container{
     width: 430px;
     background-color: rgba(255, 0, 0, 0.171);
 }
+/*? Section Played ------------------------------------*/
 
 figure.album{
     width: calc(100% / 6 );
-    /* margin: 10px; */
     margin-top: 20px;
     text-align: center;
 }
+
+/*? Figcaption settings -------------------------------*/
 
 div.title{
     padding: 30px 10px;
@@ -124,41 +129,55 @@ div.title-suggested span
     color: var(--text-grey-color);
 }
 
+
+/*? Section popular -----------------------------------*/
 section.suggested{
     margin-top: 50px;
 }
 
-figure.album-sugg{
+figure.album-sugg,
+.album-popular{
     width: calc(100% / 6 );
-    /* margin: 10px; */
     text-align: center;
 }
 
+figure.album-popular{
+    overflow: hidden;
+}
 
+figure.album-popular img{
+    border-radius: 50%;
+}
+
+
+/*? Footer --------------------------------------------*/
 footer{
     width: 100%;
     height: 70px;
     background-color: var(--grey-color);
 }
 
-/** REXPONSIVE */
+/**------------------- REXPONSIVE --------------------*/
 
 /*? MEDIUM */
 @media screen and (max-width:1250px) {
 
     figure.album{
         width: calc(100% / 4 );
-        /* margin: 5px; */
     }    
 
     figure.album-sugg{
         width: calc(100% / 4 );
-        /* margin: 5px; */
+        text-align: center;
+    }
+
+    figure.album-popular{
+        width: calc(100% / 4 );
         text-align: center;
     }
 }
 
-/*! SMALL */
+/*? SMALL */
 @media screen and (max-width:900px){
 
     figure.album{
@@ -167,8 +186,10 @@ footer{
 
     figure.album-sugg{
         width: calc(100% / 2 );
-        margin: 10px;
-        text-align: center;
+    }
+
+    figure.album-popular{
+        width: calc(100% / 2 );
     }
 
 }

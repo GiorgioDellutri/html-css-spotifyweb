@@ -108,6 +108,7 @@ section.playlist p:first-child{
     font-size: 1.2rem;
     font-weight: bolder;
     margin: 1rem 0;
+    color: white;
 }
 
 section.playlist i{
@@ -116,9 +117,6 @@ section.playlist i{
     margin-right: 10px;
 }
 
-section.playlist span{
-    font-size: 1.2rem;
-}
 
 
 /*? Navigational bar ----------------------------------*/
@@ -215,6 +213,10 @@ footer{
 /*? MEDIUM */
 @media screen and (max-width:1250px) {
 
+    figure img{
+        width: 95%;
+    }
+
     figure.album{
         width: calc(100% / 4 );
     }    
@@ -237,6 +239,10 @@ footer{
 
 /*? SMALL */
 @media screen and (max-width:900px){
+
+    figure img{
+        width: 90%;
+    }
 
     figure.album{
         width: calc(100% / 2 );

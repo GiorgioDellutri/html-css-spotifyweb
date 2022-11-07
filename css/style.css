@@ -41,6 +41,10 @@
 .flex-end{
     justify-content: flex-end;
 }
+
+.space-between{
+    justify-content: space-around;
+}
 /*? GENERAL SETTINGS -----------------------------------*/
 body{
     font-family: 'Sawarabi Gothic', sans-serif;
@@ -53,7 +57,6 @@ header{
     height: calc(100vh - 80px);
     background-color: black;
     color:var(--text-grey-color);
-    overflow-y:auto ;
 }
 
 main{
@@ -86,78 +89,51 @@ section.upgrade #upgrade-button{
 
 /*? Header content ----------------------------------*/
 
+
+
+div.header-content-container{
+    padding: 1.5rem 1.5rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 img.logo-big{
-    width: 80%;
+    width: 75%;
 }
 
 img.logo-small{
     width: 100%;
 }
 
-section.home{
-    margin-top: 30px;
-}
-
-
-section.home ul>li,
-section.playlist ul>li{
-    list-style-type: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-div.header-container li{
-    margin-top: .7rem;
-}
-
-div.header-container img.icon{
-    width: 20px;
-    vertical-align: text-bottom;
-}
-
-section.playlist{
-    margin-top: 30px;
-}
-
-section.playlist p:first-child{
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    margin: 1rem 0;
-}
-
-section.playlist i{
-    font-size: 2.5rem;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
+img.logo-small,
 ul.small-view,
-.logo-small{
+img.icon-small{
     display: none;
 }
 
-section.download-profile{
-    position: fixed;
-    bottom: 90px;
-    margin-top: 4rem;
+ul.standard-view{
+    margin-top: 30px;
 }
 
-section.download-profile hr{
-    margin: 5px 0;
+ul>li{
+    list-style-type: none;
+    
 }
 
-section.download-profile hr + p{
-    color: white;
-    font-weight: bolder;
+.icon{
+    width: 10%;
+    vertical-align: middle;
 }
 
-section.download-profile img.small{
-    display: none;
+section.header-top ul img{
+    width: 15%;
+    vertical-align: middle;
 }
 
 
 /*? Navigational bar ----------------------------------*/
+
 a{
     text-decoration: none;
     color: var(--text-grey-color);
@@ -174,7 +150,6 @@ nav ul>li{
     text-transform: uppercase;
 }
 
-
 /*? Container settings --------------------------------*/
 
 div.main-container{
@@ -182,15 +157,11 @@ div.main-container{
     padding: 15px;
 }
 
-div.header-container{
-    height: 50vh;
-    padding: 2rem 2.5rem 2.5rem 1.5rem;
-}
+
 
 div.download-profile{
     height: 10px;
 } 
-
 
 /*? Section Played ------------------------------------*/
 
@@ -199,7 +170,6 @@ figure.album{
     margin-top: 20px;
     text-align: center;
 }
-
 
 /*? Title settings ------------------------------------*/
 
@@ -258,6 +228,12 @@ footer{
     background-color: var(--grey-color);
 }
 
+
+
+
+
+
+
 /**------------------- REXPONSIVE --------------------*/
 
 /*? MEDIUM */
@@ -281,7 +257,6 @@ footer{
         text-align: center;
     }
 
-   
 }
 
 /*? SMALL */
@@ -326,24 +301,4 @@ footer{
     }
 
 
-    ul.small-view,
-    .logo-small,
-    section.download-profile img.small{
-    display: block;
-    }
-
-    ul.standard-view,
-    .logo-big,
-    section.playlist,
-    section.download-profile p{
-        display: none;
-    }
-
-    section.home {
-        margin-top: 15px;
-    }
-
-    section.download-profile {
-        margin-top: 610px;
-    }
 }

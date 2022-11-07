@@ -14,23 +14,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper flex wrap">
+    <div class="wrapper flex wrap ">
         <!-- HEADER -->
         <header>
-            <div class="header-container flex column relative ">
-                <img class="logo-big" src="./img/logo.svg" alt="spotify logo">
-                <img class="logo-small" src="./img/logo-small.svg" alt="spotify logo">
-                <section class="home">
-                    <ul class="small-view">
-                        <li>
-                            <a href=""><img class="icon small" src="./img/home.svg" alt="home icon small"></a>
-                        </li>
-                        <li>
-                            <a href=""><img class="icon small" src="./img/search.svg" alt="home icon small"></li></a>
-                        <li>
-                            <a href=""><img class="icon small" src="./img/libreria.svg" alt="home icon"></a>
-                        </li>
-                    </ul>
+            <div class="header-content-container">
+                <section class="header-top">
+                    <img class="logo-big" src="./img/logo.svg" alt="spotify logo">
+                    <img class="logo-small" src="./img/logo-small.svg" alt="spotify logo">
                     <ul class="standard-view">
                         <li>
                             <a href=""><p><img class="icon big" src="./img/home.svg" alt="home icon"> Home</p></a>
@@ -42,9 +32,17 @@
                             <a href=""><p><img class="icon big" src="./img/libreria.svg" alt="home icon"> La tua libreria</p></a>
                         </li>
                     </ul>
-                </section>
-                <section class="playlist" >
-                    <p>Playlist</p>
+                    <ul class="small-view">
+                        <li>
+                            <a href=""><img class="icon small" src="./img/home.svg" alt="home icon small"></a>
+                        </li>
+                        <li>
+                            <a href=""><img class="icon small" src="./img/search.svg" alt="home icon small"></li></a>
+                        <li>
+                            <a href=""><img class="icon small" src="./img/libreria.svg" alt="home icon"></a>
+                        </li>
+                    </ul>
+                    <h2>Playlist</h2>
                     <a href=""><i class="fa-regular fa-square-plus"></i><span>Crea Playlist</a>
                     <ul>
                         <li>
@@ -70,15 +68,12 @@
                         </li>
                     </ul>
                 </section>
-                <div>
-                    
-                </div>
-                <section class="download-profile">
-                    <a href=""><p><img class="icon big" src="./img/download.svg" alt="home icon"> Installa app</p></a>
-                    <img class="icon small" src="./img/download.svg" alt="home icon small">
+                <section class="header-bottom">
+                    <a href=""><p><img class="icon icon-donwload" src="./img/download.svg" alt="home icon"> Installa app</p></a>
+                    <!-- <img class="icon-small" src="./img/download.svg" alt="home icon small"> -->
                     <hr>
-                    <p><img class="icon profile" src="./img/profile.svg" alt="home icon"> Giorgio</p>
-                    <img class="icon small" src="./img/profile.svg" alt="home icon small">
+                    <p><img class="icon icon-profile" src="./img/profile.svg" alt="home icon"> Giorgio</p>
+                    <!-- <img class="icon-small" src="./img/profile.svg" alt="home icon small"> -->
                 </section>
             </div>
         </header>

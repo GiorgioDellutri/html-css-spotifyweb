@@ -57,6 +57,11 @@ header{
     height: calc(100vh - 80px);
     background-color: black;
     color:var(--text-grey-color);
+    height: calc(100vh - 80px);
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main{
@@ -89,13 +94,18 @@ section.upgrade #upgrade-button{
 
 /*? Header content ----------------------------------*/
 
+section.header-top h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--text-white-color);
+}
 
-
-div.header-content-container{
-    padding: 1.5rem 1.5rem 1rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+h3 + a>i{
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+    vertical-align: middle;
 }
 
 img.logo-big{
@@ -131,6 +141,14 @@ section.header-top ul img{
     vertical-align: middle;
 }
 
+section.header-bottom hr{
+    margin: .3rem 0 .3rem 0;
+}
+section.header-bottom hr + p{
+    font-weight: bold;
+    color: var(--text-white-color);
+}
+
 
 /*? Navigational bar ----------------------------------*/
 
@@ -158,10 +176,6 @@ div.main-container{
 }
 
 
-
-div.download-profile{
-    height: 10px;
-} 
 
 /*? Section Played ------------------------------------*/
 

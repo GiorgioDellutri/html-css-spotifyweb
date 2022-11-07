@@ -157,11 +157,10 @@ section.playlist ul>li{
     margin-top: .5rem;
 }
 
-section.playlist h3
-
-section.header-bottom hr{
-    margin: .3rem 0 .3rem 0;
+hr{
+    margin: .4rem 0 .4rem 0;
 }
+
 section.header-bottom hr + p{
     font-weight: bold;
 }
@@ -192,8 +191,6 @@ div.main-container{
     width: 100%;
     padding: 15px;
 }
-
-
 
 /*? Section Played ------------------------------------*/
 
@@ -266,7 +263,7 @@ footer{
 
 
 
-/**------------------- REXPONSIVE --------------------*/
+/**----------- REXPONSIVE -----------*/
 
 /*? MEDIUM */
 @media screen and (max-width:1250px) {

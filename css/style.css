@@ -47,14 +47,13 @@ header{
     height: calc(100vh - 80px);
     background-color: black;
     color:var(--text-grey-color);
-    overflow-y: auto;
 }
 
 main{
     width: calc(100% - 225px);
     height: calc(100vh - 80px);
     background-color: var(--light-blue-color);
-    overflow-y: auto;
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -132,7 +131,7 @@ ul.small-view,
 }
 
 section.download-profile{
-    margin-top:180px ;
+    margin-top:190px ;
 }
 
 section.download-profile hr{
@@ -326,6 +325,6 @@ footer{
     }
 
     section.download-profile {
-        margin-top: 615px;
+        margin-top: 610px;
     }
 }

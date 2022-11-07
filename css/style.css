@@ -80,7 +80,7 @@ section.upgrade{
 }
 
 section.upgrade #upgrade-button{
-    margin-right: 10px;
+    margin-right: 20px;
     border-radius:28px;
     cursor:pointer;
     background-color: var(--light-black-color);
@@ -92,13 +92,23 @@ section.upgrade #upgrade-button{
     color: white;
 }
 
+section.upgrade input:hover{
+    transform: scale(1.1);
+}
+
 /*? Header content ----------------------------------*/
 
 section.header-top h3{
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
+}
+
+section.header-top h3,
+section.header-bottom hr + p
+{
     color: var(--text-white-color);
+
 }
 
 h3 + a>i{
@@ -147,12 +157,13 @@ section.playlist ul>li{
     margin-top: .5rem;
 }
 
+section.playlist h3
+
 section.header-bottom hr{
     margin: .3rem 0 .3rem 0;
 }
 section.header-bottom hr + p{
     font-weight: bold;
-    color: var(--text-white-color);
 }
 
 
@@ -164,9 +175,10 @@ a{
     font-weight: bold;
 }
 
-ul a:hover{
+a:hover{
     color: var(--text-white-color);
 }
+
 
 nav ul>li{
     padding: .8rem;

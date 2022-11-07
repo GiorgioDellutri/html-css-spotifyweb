@@ -114,11 +114,14 @@ img.logo-big{
 
 img.logo-small{
     width: 100%;
+    margin-bottom: 1rem;
 }
 
-img.logo-small,
-ul.small-view,
-img.icon-small{
+img.icon.small{
+    width: 2rem;
+}
+
+.xs-view{
     display: none;
 }
 
@@ -128,7 +131,6 @@ ul.standard-view{
 
 ul>li{
     list-style-type: none;
-    
 }
 
 .icon{
@@ -139,6 +141,10 @@ ul>li{
 section.header-top ul img{
     width: 15%;
     vertical-align: middle;
+}
+
+section.playlist ul>li{
+    margin-top: .5rem;
 }
 
 section.header-bottom hr{
@@ -299,6 +305,7 @@ footer{
 
     header{
         width: 50px;
+        padding: .5rem;
     }
 
     main{
@@ -310,9 +317,12 @@ footer{
         flex-wrap: wrap;
     }
 
-    div.header-container {
-        padding: 12px;
+    .standard-view{
+        display: none;
     }
 
+    .xs-view{
+        display: block;
+    }
 
 }

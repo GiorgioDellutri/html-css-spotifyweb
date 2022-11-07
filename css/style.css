@@ -21,6 +21,10 @@
     flex-wrap: wrap;
 }
 
+.column{
+    flex-direction: column;
+}
+
 .justify-center{
     justify-content: center;
 }
@@ -32,9 +36,6 @@
     align-items: flex-end;
 }
 
-.flex-end{
-    justify-content: flex-end;
-}
 
 body{
     font-family: 'Sawarabi Gothic', sans-serif;
@@ -47,6 +48,7 @@ header{
     height: calc(100vh - 80px);
     background-color: black;
     color:var(--text-grey-color);
+    overflow: auto;
 }
 
 main{
@@ -131,7 +133,7 @@ ul.small-view,
 }
 
 section.download-profile{
-    margin-top:190px ;
+    margin-top: 4rem;
 }
 
 section.download-profile hr{

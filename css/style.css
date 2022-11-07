@@ -337,4 +337,8 @@ footer{
         display: block;
     }
 
+    hr{
+        margin: .4rem 0 .4rem 0 ;
+    }
+
 }

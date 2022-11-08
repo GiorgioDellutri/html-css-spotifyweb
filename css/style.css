@@ -89,6 +89,7 @@ section.upgrade #upgrade-button{
     text-transform: uppercase;
     text-decoration:none;
     color: white;
+    border-color: 1px #1ED760:
 }
 
 section.upgrade input:hover{
@@ -178,7 +179,6 @@ section.playlist ul>li{
     margin-top: 1rem;
 }
 
-
 hr{
     margin: .4rem 0 .4rem 0;
 }
@@ -230,7 +230,7 @@ div.main-container{
 /*? Section Played ------------------------------------*/
 
 figure.album{
-    width: calc(100% / 6 );
+    width: calc(100% / 6 - 10px);
     margin-top: 20px;
     text-align: center;
 }
@@ -252,31 +252,56 @@ h4{
 
 /*? Figure / Figcaption settings ----------------------*/
 
-figure img{
-    width: 90%;
+figure{
+    margin-right: 10px;
 }
 
-figure.album img{
-    z-index: 1;
-}
-
-div.overlay:{
-    position: absolute;
-    top: 0;
-    left: 0;
+figure div.container-overlay{
     width: 100%;
-    height: 65%;
-    background-color: rgba(255, 0, 0, 0.144);
+    position: relative;
 }
 
+figure div.container-overlay img{
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+div.container-overlay:hover img{
+    opacity: 0.4;
+}
+
+div.overlay-button i{
+    font-size: 70px;
+}
+
+div.container-overlay div.overlay-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+div.container-overlay:hover div.overlay-button{
+    opacity: 1;
+}
+
+figure img{
+    width: 95%;
+}
 
 figcaption p,
 span{
     font-weight: bold;
 }
 
+figcaption p{
+    margin-bottom: .3rem;
+}
+
 figcaption span{
-    font-size: .9rem;
+    font-size: .8rem;
     color: var(--text-grey-color);
 }
 
@@ -288,7 +313,7 @@ section.suggested{
 
 figure.album-sugg,
 .album-popular{
-    width: calc(100% / 6 );
+    width: calc(100% / 6 - 10px );
     text-align: center;
 }
 
@@ -374,20 +399,24 @@ section.footer-right{
         width: 95%;
     }
 
+    div.overlay-button i{
+        font-size: 50px;
+    }
+
+
     figure.album{
-        width: calc(100% / 4 );
+        width: calc(100% / 4 - 10px );
     }    
 
     figure.album-sugg{
-        width: calc(100% / 4 );
+        width: calc(100% / 4 - 10px );
         text-align: center;
     }
 
     figure.album-popular{
-        width: calc(100% / 4 );
+        width: calc(100% / 4 - 10px );
         text-align: center;
     }
-
 }
 
 /*? SMALL */
@@ -401,21 +430,28 @@ section.footer-right{
     }
 
     figure img{
-        width: 90%;
+        width: 100%;
+    }
+
+    div.overlay-button i{
+        font-size: 70px;
     }
 
     figure.album{
-        width: calc(100% / 2 );
+        width: calc(100% / 2 - 10px );
         }    
 
     figure.album-sugg{
-        width: calc(100% / 2 );
+        width: calc(100% / 2 - 10px);
     }
 
     figure.album-popular{
-        width: calc(100% / 2 );
+        width: calc(100% / 2 - 10px );
     }
     
+    ul.xs-view>li{
+        margin-bottom: 10px;
+    }
     
 
 }

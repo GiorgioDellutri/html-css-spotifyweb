@@ -90,11 +90,14 @@ section.upgrade #upgrade-button{
     text-transform: uppercase;
     text-decoration:none;
     color: white;
-    border-color: 1px #1ED760:
+    border: 2px solid #1ED760;
+    transition: 0.1s ease-in;
 }
 
 section.upgrade input:hover{
     transform: scale(1.05);
+    border-color: #1ED760:
+
 }
 
 /*? Header content ----------------------------------*/
@@ -120,7 +123,7 @@ h3 + a>i{
 }
 
 img.logo-big{
-    width: 75%;
+    width: 80%;
 }
 
 img.logo-small{

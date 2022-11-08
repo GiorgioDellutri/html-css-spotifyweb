@@ -119,7 +119,7 @@
                         <h1>Recently played</h1>
                     </div>
                     <div class="albums flex wrap">
-                        <figure class="album relative">
+                        <figure class="album ">
                             <div class="container-overlay">
                                 <img src="./img/metal_lifting.jpg" alt="Metal lifting">
                                 <div class="overlay-button">
@@ -246,9 +246,11 @@
                     <p>Sinister</p>
                     <p>Nome Brano</p> 
                 </div>
-                <div class="like-icon"> 
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                <div class="like-icon">
+                    <ul>
+                        <li><i class="fa-regular fa-heart"></i></li>
+                        <li><i class="fa-regular fa-folder"></i></li>
+                    </ul> 
                 </div>
             </section>
             <section class="footer-center flex align-center justify-around column">
@@ -263,13 +265,25 @@
                 </div>
                 <div class="slicer-song flex row align-center">
                     <span>0 : 25</span>
-                    <div class="slicer">
-                        <div class="progress"></div>
+                    <div class="slicer song-slicer">
+                        <div class="progress progress-song"></div>
                     </div>
                     <span>3 : 15</span>
                 </div>
             </section>
-            <section class="footer-right">dasdasdasdadas</section>
+            <section class="footer-right flex justify-center align-center flex-end">
+                <div class="utility-button">
+                    <ul>
+                        <li><i class="fa-solid fa-list-ul"></i></li>
+                        <li><i class="fa-solid fa-desktop"></i></li>
+                        <li><i class="fa-solid fa-volume-high"></i></li>
+                    </ul>
+                </div>
+                <div class="slicer volume-slicer">
+                    <div class="progress progress-volume"></div>
+                </div>
+                
+            </section>
         </footer>
     </div>
 </body>

@@ -356,8 +356,12 @@ footer{
     background-color: var(--grey-color);
     display: flex;
     justify-content: space-between;
-
 }
+
+footer li{
+    display: inline-block;
+}
+
 div.right-content{
     height: 100%;
 }
@@ -396,7 +400,7 @@ section.footer-left div.like-icon{
     padding-top: 15px;
 }
 
-div.like-icon i{
+ul li i{
 margin-right: 15px;
 }
 
@@ -416,8 +420,8 @@ section.footer-right{
     flex-basis: 20%;
 }
 
-section.footer-center div.buttons-player ul>li{
-    display: inline-block;
+section.footer-center div.footer-richt,
+div.buttons-player ul>li{
     margin: 0 2rem;
     font-size: 1.4rem;
 }
@@ -430,10 +434,17 @@ section.footer-center div.buttons-player{
     margin-bottom: 10px;
 }
 
-section.footer-center div.slicer{
+div.slicer{
     height: 5px;
-    width: 600px;
     background-color: var(--slicer-bar0color);
+}
+
+div.song-slicer{
+    width: 600px;
+}
+
+div.volume-slicer{
+    width: 100px;
 }
 
 section.footer-center span{
@@ -441,26 +452,32 @@ section.footer-center span{
     margin: 0 1rem;
 }
 
-div.slicer-song div.progress{
+div.progress{
     height: 5px;
-    width: 200px;
     background-color: var(--text-white-color);
 }
 
+div.progress-song{
+    width: 200px;
+}
+
+div.progress-volume{
+    width: 40px;
+}
 
 /**----------- REXPONSIVE -----------*/
 
 /*? MEDIUM */
-@media screen and (max-width:1250px) {
+
+@media screen and (max-width:1250px){
 
     figure img{
-        width: 95%;
+        width: 100%;
     }
 
     div.overlay-button i{
         font-size: 50px;
     }
-
 
     figure.album{
         width: calc(100% / 4 - 10px );
@@ -475,6 +492,7 @@ div.slicer-song div.progress{
         width: calc(100% / 4 - 10px );
         text-align: center;
     }
+
 }
 
 /*? SMALL */

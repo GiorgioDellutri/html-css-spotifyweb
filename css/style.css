@@ -138,8 +138,21 @@ ul.standard-view{
     margin-top: 30px;
 }
 
+ul.standard-view >li{
+    margin-bottom: .4rem;
+}
+
 ul>li{
     list-style-type: none;
+}
+
+div.green-bar-vertical{
+    display: inline-block;
+    height: 2px;
+    width: 20px;
+    background-color: var(--lime-color);
+    transform: rotate(90deg);
+    transform: translate(100% - 10px);
 }
 
 .icon{
@@ -154,6 +167,9 @@ section.header-top ul img{
 
 section.playlist ul>li{
     margin-top: .5rem;
+}
+section.playlist{
+    overflow-y: auto;
 }
 
 hr{
@@ -181,6 +197,13 @@ nav ul>li{
     padding: .8rem;
     list-style-type: none;
     text-transform: uppercase;
+}
+
+div.green-bar-horizontal{
+    height: 2px;
+    width: 40px;
+    margin: 0 auto;
+    background-color: var(--lime-color);
 }
 
 /*? Container settings --------------------------------*/
@@ -293,7 +316,8 @@ section.footer-left div.like-icon{
 }
 
 div.like-icon i{
-margin-right: 5px;}
+margin-right: 5px;
+}
 
 div.like-icon .fa-heart:hover{
     color: #1ED760;

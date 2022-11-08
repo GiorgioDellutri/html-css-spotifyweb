@@ -117,7 +117,6 @@ section.header-top h3,
 section.header-bottom hr + p
 {
     color: var(--text-white-color);
-
 }
 
 h3 + a>i{
@@ -155,7 +154,6 @@ ul.standard-view >li{
 ul>li{
     list-style-type: none;
 }
-
 
 div.green-bar-vertical{
     position: relative;
@@ -231,7 +229,6 @@ div.green-bar-horizontal{
 nav ul>li:hover div.green-bar-horizontal{
     opacity: 1;
 }
-
 
 /*? Container settings --------------------------------*/
 
@@ -331,7 +328,6 @@ section.suggested{
 }
 
 
-
 /*? Section popular -----------------------------------*/
 
 figure.album-sugg,
@@ -390,7 +386,6 @@ div.info-song p:first-child{
 
 div.info-song p:last-child{
     font-size: .7rem;
-
 }
 
 section.footer-left div.like-icon{
@@ -506,6 +501,7 @@ div.progress-volume{
 
 /*? SMALL */
 @media screen and (max-width:900px){
+    
     header{
         align-items: center;
     }

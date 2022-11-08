@@ -168,7 +168,7 @@ section.header-top ul img{
 }
 
 section.playlist ul>li{
-    margin-top: .5rem;
+    margin-top: 1rem;
 }
 section.playlist{
     overflow-y: auto;

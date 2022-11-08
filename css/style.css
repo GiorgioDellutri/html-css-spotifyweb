@@ -156,7 +156,7 @@ div.green-bar-vertical{
     width: 25px;
     background-color: var(--lime-color);
     transform: rotate(90deg);
-    transition: .3s ease-in-out;
+    transition: .1s;
 }
 
 section.header-top ul>li:hover div.green-bar-vertical,
@@ -212,6 +212,7 @@ div.green-bar-horizontal{
     opacity: 0;
     margin: 0 auto;
     background-color: var(--lime-color);
+    transition: .1s;
 }
 
 nav ul>li:hover div.green-bar-horizontal{

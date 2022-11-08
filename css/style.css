@@ -266,6 +266,9 @@ figure.album-sugg,
     text-align: center;
 }
 
+
+
+
 figure.album-popular{
     overflow: hidden;
 }
@@ -366,6 +369,13 @@ section.footer-right{
 
 /*? SMALL */
 @media screen and (max-width:900px){
+    header{
+        align-items: center;
+    }
+
+    section.header-bottom img{
+        width: 20px;
+    }
 
     figure img{
         width: 90%;
@@ -382,7 +392,7 @@ section.footer-right{
     figure.album-popular{
         width: calc(100% / 2 );
     }
-
+    
 }
 
 /*? EXTRA-SMALL */

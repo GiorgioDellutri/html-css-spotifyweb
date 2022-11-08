@@ -61,6 +61,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: auto;
 }
 
 main{
@@ -173,6 +174,10 @@ div.green-bar-horizontal{
 section.header-top ul img{
     width: 15%;
     vertical-align: middle;
+}
+
+section.playlist{
+    margin-bottom: 8rem;
 }
 
 section.playlist ul>li{

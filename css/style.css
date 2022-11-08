@@ -47,7 +47,7 @@
 }
 /*? GENERAL SETTINGS -----------------------------------*/
 body{
-    font-family: 'Sawarabi Gothic', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     min-width: 370px;
 }
@@ -147,9 +147,11 @@ ul>li{
 }
 
 div.green-bar-vertical{
-    display: inline-block;
-    height: 2px;
-    width: 20px;
+    position: relative;
+    left: -25px;
+    top:-15px;
+    height: 4px;
+    width: 25px;
     background-color: var(--lime-color);
     transform: rotate(90deg);
     transform: translate(100% - 10px);
@@ -233,6 +235,7 @@ h1{
 
 h4{
     color: var(--text-grey-color);
+    margin: 1rem 0;
 }
 
 /*? Figure / Figcaption settings ----------------------*/

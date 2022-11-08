@@ -251,6 +251,7 @@ div.title{
 
 h1{
     font-size: 1.8rem;
+    font-weight: bold;
 }
 
 h4{
@@ -404,6 +405,22 @@ section.footer-center{
 
 section.footer-right{
     flex-basis: 20%;
+}
+
+section.footer-center div.buttons-player ul>li{
+    display: inline-block;
+    margin: 0 2rem;
+    font-size: 1.2rem;
+}
+
+section.footer-center div.buttons{
+    margin-bottom: 4rem;
+}
+
+section.footer-center div.slicer-song{
+    height: 5px;
+    width: 100px;
+    background-color: var(--text-grey-color);
 }
 
 

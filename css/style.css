@@ -278,6 +278,13 @@ div.container-overlay:hover img{
     opacity: 0.4;
 }
 
+div.overlay-button button{
+    cursor: pointer;
+    background-color: #00000000;
+    border: 0px;
+    color: var(--text-white-color);
+}
+
 div.overlay-button i{
     font-size: 70px;
 }
@@ -316,6 +323,8 @@ figcaption span{
 section.suggested{
     margin-top: 50px;
 }
+
+
 
 /*? Section popular -----------------------------------*/
 

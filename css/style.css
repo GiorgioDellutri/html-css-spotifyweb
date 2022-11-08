@@ -383,9 +383,6 @@ section.footer-left div.info-song{
     padding: 5px;
 }
 
-div.info-song{
-}
-
 div.info-song p:first-child{
     font-size: 1rem;
     font-weight: bold;
@@ -409,6 +406,18 @@ div.like-icon .fa-heart:hover{
 }
 
 div.like-icon .fa-folder:hover{
+    color: #1ED760; 
+}
+
+div.utility-button .fa-list-ul:hover{
+    color: #1ED760; 
+}
+
+div.utility-button .fa-desktop:hover{
+    color: #1ED760; 
+}
+
+div.utility-button .fa-volume-high:hover{
     color: #1ED760; 
 }
 
@@ -469,7 +478,7 @@ div.progress-volume{
 
 /*? MEDIUM */
 
-@media screen and (max-width:1250px){
+@media screen and (max-width:1280px){
 
     figure img{
         width: 100%;
@@ -529,7 +538,6 @@ div.progress-volume{
         margin-bottom: 10px;
     }
     
-
 }
 
 /*? EXTRA-SMALL */
